@@ -1,111 +1,33 @@
-Distributed Systems Labs 
------------------------------------------------------------
-1. Java RMI – Remote Method Invocation
+# Distributed Systems Labs
 
-Tools: Java, RMI Registry
-Objective: Build remote communication between client and server using remote method calls.
-Global Structure:
+![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white)
+![Hadoop](https://img.shields.io/badge/Hadoop-66CCFF?style=flat-square&logo=apachehadoop&logoColor=black)
+![Spark](https://img.shields.io/badge/Apache_Spark-E25A1C?style=flat-square&logo=apachespark&logoColor=white)
+![Kafka](https://img.shields.io/badge/Kafka-231F20?style=flat-square&logo=apachekafka&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-blue?style=flat-square)
 
-/server – remote service implementation
+A collection of **distributed systems** labs, covering remote communication and large-scale data processing.
 
-/client – client invoking remote methods
+## Labs
 
-/shared – interfaces and remote objects
+| Folder | Topic |
+|---|---|
+| `CORBA_Lab` | Remote objects with CORBA (IDL, ORB) in Java |
+| `JavaRMI_Lab` | Remote Method Invocation in Java |
+| `HadoopLab` | Distributed storage and MapReduce with Hadoop |
+| `SparkSQL_LAB` | Large-scale queries with Spark SQL |
+| `GraphX_GraphFrameLab` | Graph processing with GraphX / GraphFrames |
+| `MLLibLab` | Distributed machine learning with Spark MLlib |
+| `KafkaLab` | Streaming and messaging with Apache Kafka |
 
------------------------------------------------------------
+## Tech stack
 
-2. CORBA – Common Object Request Broker Architecture
+Java, CORBA, RMI, Apache Hadoop, Apache Spark (SQL, GraphX, MLlib), Apache Kafka.
 
-Tools: Java, IDL, ORB
-Objective: Implement distributed components communicating through an Object Request Broker using IDL interfaces.
-Global Structure:
+## Notes
 
-/idl – interface definitions
+Academic labs from the Distributed Systems and Big Data coursework (ESI SBA).
 
-/server – CORBA server implementing IDL
+## License
 
-/client – client interacting with the ORB
-
------------------------------------------------------------
-
-3. Distributed Sockets
-
-Tools: Java/Python, TCP/UDP
-Objective: Practice low-level network communication with socket-based message exchange.
-Global Structure:
-
-/server – socket server
-
-/client – message sender/receiver
-
-/utils – helpers and serialization
-
------------------------------------------------------------
-
-4. RPC – Remote Procedure Call
-
-Tools: Python/Java RPC Frameworks
-Objective: Execute remote functions transparently using stubs and skeletons.
-Global Structure:
-
-/service – RPC server implementation
-
-/client – remote procedure calls
-
-/protocol – communication + serialization logic
-
------------------------------------------------------------
-
-5. Spark SQL
-
-Tools: Apache Spark, PySpark
-Objective: Query and process large datasets using distributed SQL operations.
-Global Structure:
-
-/notebooks – SQL queries & transformations
-
-/datasets – input data
-
-/jobs – Spark scripts
-
------------------------------------------------------------
-
-6. Hadoop HDFS + MapReduce
-
-Tools: Hadoop, HDFS, MapReduce API
-Objective: Understand distributed storage and parallel data processing over large datasets.
-Global Structure:
-
-/hdfs – scripts to upload/manage files
-
-/mapreduce – mapper & reducer code
-
-/output – execution results
-
------------------------------------------------------------
-
-7. GraphX (Distributed Graph Processing)
-
-Tools: Spark GraphX, Scala/Python
-Objective: Analyze large graphs using distributed algorithms such as PageRank.
-Global Structure:
-
-/graphs – input graphs
-
-/algorithms – graph computations
-
-/results – outputs & metrics
-
------------------------------------------------------------
-
-8. Kafka – Distributed Event Streaming
-
-Tools: Apache Kafka, Zookeeper
-Objective: Implement a distributed messaging and streaming pipeline with producers and consumers.
-Global Structure:
-
-/producer – event/message producer
-
-/consumer – consumer reading streams
-
-/config – Kafka topics & server configs
+Released under the MIT License. See [LICENSE](LICENSE).
